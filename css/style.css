@@ -1,0 +1,23 @@
+@import 'normalize8.0.1.css';
+
+.container {
+	max-width: 576px;
+	margin: 50px auto;
+}
+
+.fisher {
+	width: 576px;
+	height: 1024px;
+	background: url(../img/sprite.png) 0 0 no-repeat;
+	-webkit-animation: play 3s steps(31) infinite;
+	animation: play 3s steps(31) infinite;
+}
+
+@keyframes play {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 0 -31744px;
+	}
+}
